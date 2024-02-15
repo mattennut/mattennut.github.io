@@ -1,0 +1,225 @@
+html, body{
+    padding: 0px;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'ClashGrotesk-Extralight';
+    src: url(fonts/ClashGrotesk-Extralight.otf)
+}
+
+@font-face {
+    font-family: 'ClashGrotesk-Medium';
+    src: url(fonts/ClashGrotesk-Medium.otf)
+}
+
+@font-face {
+    font-family: 'Satoshi-Black';
+    src: url(fonts/Satoshi-Black.otf)
+}
+
+@font-face {
+    font-family: 'Satoshi-Light';
+    src: url(fonts/Satoshi-Light.otf)
+}
+
+@font-face {
+    font-family: 'Stardom';
+    src: url(fonts/Stardom-Regular.otf)
+}
+
+@font-face {
+    font-family: 'Telma';
+    src: url(fonts/Telma-Medium.otf)
+}
+
+body{
+    background-color: #100D0C;
+}
+
+#content{
+    padding-top: 100px;
+    width: 60%;
+}
+
+#banner_content {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+}
+
+#my-sticky-div {
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: y mandatory 100px; /* Stop sticking at 200px */
+}
+
+@media (max-width: 768px) {
+    .my-element {
+      height: 60vw; /* Increases in smaller screens */
+    }
+  }
+
+#footer{
+    width: 60%;
+    margin: auto;
+}
+
+.work-sheet{
+    background: linear-gradient(to top, #FFF8F020, #FFF8F000 80%);
+    padding: 10px;
+}
+
+.work-sheet h{
+    font-size: 45pt;
+}
+
+.project-tag-div{
+    padding-bottom: 10px;
+}
+
+.project-tag{
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #FFF8F0;
+    border: #FFF8F0 solid 2px;
+    font-family: 'ClashGrotesk-Extralight';
+}
+
+.under-development{
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 15px;
+    color: #100D0C;
+    background-color: #FF7F11;
+    font-family: 'ClashGrotesk-Medium';
+}
+
+#banner{
+    height: 60vh;
+    
+    
+    background: linear-gradient(120deg, #5c1761, #c22f5c, #d2335b, #d43661, #ff8800);
+    background-size: 400% 100%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#banner_gradient{
+    position: inherit;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom,#100D0C00 10%,#100D0C30 75%, #100D0C60 85%, #100D0C);
+}
+
+h{
+    color: #FFF8F0;
+    font-family: 'Satoshi-Black';
+    font-size: 30pt;
+}
+
+h1{
+    color: #FFF8F0;
+    font-family: 'ClashGrotesk-Medium';
+    font-size: 24pt;
+}
+
+#works_list a{
+    transition: 0.2s;
+    float: right; 
+    padding: 5px;
+    background-color: #FFF8F030;
+    box-shadow: 0px 0px 10px #FFF8F010;
+}
+
+#works_list a:hover{
+    background-color: #FFF8F040;
+    box-shadow: 0px 0px 10px #FFF8F060;
+}
+
+#works_list a:active{
+    background-color: #FFF8F010;
+    box-shadow: 0px 0px 10px #FFF8F020;
+}
+
+#header{ 
+    background-color: #100D0C;
+    position: fixed; 
+    margin: 0 auto;
+    width: 60%;
+    height: 60px;
+    border-radius: 0 0 15px 15px;
+    top: 0;
+    padding: 5pt;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+p{
+    letter-spacing: 0.5px;
+    color: #FFF8F0;
+    font-family: 'ClashGrotesk-Extralight';
+    font-size: 3vh;
+}
+
+p1{
+    color: #FFF8F030;
+    font-family: 'ClashGrotesk-Extralight';
+    font-size: 16pt;
+}
+
+li{
+    color: #FFF8F0;
+    font-family: 'ClashGrotesk-Extralight';
+    font-size: 16pt;
+}
+
+a{
+    color: #FFF8F0;
+    font-family: 'ClashGrotesk-Extralight';
+    font-size: 2vh;
+    text-decoration: none;
+    
+}
+
+#header a{
+    transition: 0.2s;
+    margin: auto;
+    background: #100D0C;
+    margin: 10pt;
+    font-size: 20px;
+    padding: 10px;
+    
+    border: #FFF8F0 solid 1px;
+    border-radius: 25px;
+}
+
+#header a:hover{
+    background: #FFF8F0;
+    color: #100D0C;
+    box-shadow: 0px 0px 20px #FFF8F030;
+}
+
+#header a:active{
+    background: #4b152a;
+    box-shadow: 0px 0px 20px #f3579320;
+}
